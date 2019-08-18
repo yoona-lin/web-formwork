@@ -1,0 +1,40 @@
+*{
+    margin: 0; /*去掉一些默认样式*/
+    padding: 0; /*去掉一些默认样式*/
+    text-decoration: none; /*去掉a标签下划线*/
+    outline: none; /*去掉a标签*/
+    list-style: none; /*去掉li标签前面小点*/
+}
+
+/* 
+a{
+    display:block;
+    overflow: hidden; /*自动隐藏文字 */
+    /*text-overflow: ellipsis; /* 文字隐藏后添加省略号 */
+    /*white-space: nowrap; /* 强制不换行 */
+    /*width: 20em; /* 不允许出现半汉字截断 */
+    /*word-break:keep-all; /*
+ }
+*/
+body{
+    background-color: lightblue;
+}
+.container{
+    width: 980px;
+    /* height: 980px; */
+    background-color: #fff;
+    margin: 0 auto;
+}
+.rowLine{
+    background-color: rgb(253, 229, 14);
+    height: 4px;
+    clear: both;
+}
+.icon{
+    width: 12px;
+    height: 100%;
+    margin-right: 2px;
+}
+p{
+    line-height: 20px;
+}

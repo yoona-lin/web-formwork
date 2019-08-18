@@ -1,0 +1,247 @@
+
+/*.content-header{
+}
+*/
+
+
+/* content-header */
+.content-header-nav{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: cadetblue;
+    font-weight: bold;
+}
+.nav-one li{
+    float: left;
+    list-style:none;
+    margin-left: 10px;
+    position: relative;
+    z-index: 3;
+}
+.nav-one li a{
+    color: #fff;
+}
+.active{
+    color: #000;
+    position: relative;
+}
+.home-icon{
+    position: absolute;
+    top: -4px;
+    left: 2px;
+}
+.nav-one li a:hover{
+    color: #000;
+    cursor: pointer;
+}
+.nav-one li:hover .nav-two{
+    display: block;
+}
+.nav-two{
+    display: none;
+    font-weight: normal;
+    background-color: rgb(171, 224, 226);
+    position: absolute;
+    left: -10%;
+    top: 30px;
+}
+.nav-two li{
+    height: 30px;
+    margin: 2px 8px;
+    font-size: 14px;
+    line-height: 30px;
+    clear: both;
+}
+.nav-two li a{
+    color: #fff;
+}
+.nav-two li a:hover{
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content-header-search {
+    float: right;
+    margin-right: 10px;
+}
+.search-text{
+    width: 100px;
+    height: 18px;
+    border: none;
+}
+.search-button{
+    width: 42px;
+    height: 20px;
+    background-color: coral;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*content-main*/
+.content-main{
+    width: 980px;
+}
+.content-main a:hover{
+    color: #bbb4b4
+}
+
+/* content-main-left */
+.content-main-left{
+    float: left;
+    width: 240px;
+    height: 620px;
+    background-color: #f3f3f3
+}
+.content-main-L-top{
+    width: 220px;
+    height: 240px;
+    margin: 10px auto;
+}
+.CMLT-header{
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    background-color: cadetblue;
+    border: 1px solid rgb(138, 187, 189);
+    border-radius: 10px;
+}
+.CMLT-header a{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 80px;
+}
+.CMLT-box{
+    width: 220px;
+    margin: 4px 0;
+    background-color: #fff;
+    border: 1px solid rgb(180, 198, 199);
+    border-radius: 4px;
+    font-size: 14px;
+}
+.CMLT-box ul li{
+    margin: 6px;
+    list-style: none;
+}
+.CMLT-box ul li a{
+    color: #000;
+}
+.content-main-L-bottom{
+    width: 220px;
+    height: 100px;
+    margin: 10px auto;
+}
+
+
+
+
+/* content-main-middle */
+.content-main-middle{
+    float: left;
+    width: 500px;
+    background-color: #fff;
+}
+.CMMO-header{
+    height: 40px;
+    width: 500px;
+    font-size: 22px;
+    line-height: 40px;
+    color: cadetblue;
+    position: relative;
+}
+.CMMO-header a{
+    display: inline-block;
+    height: 20px;
+    width: 80px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 10px;
+    background-color: cadetblue;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    position: absolute;
+    left: 380px;
+    top: 10px;
+}
+/* 轮播图 */
+#container { width: 250px; height: 250px; border: 2px solid #333; overflow: hidden; position: relative;float: left;}
+#list { width: 1750px; height: 250px; position: absolute; z-index: 1;}
+#list a img{ float: left; width:250px;height:100%;}
+#buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 150px;}
+#buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+#buttons .on {  background: orangered;}
+.arrow { cursor: pointer; display: none; line-height: 20px; text-align: center; font-size: 20px; font-weight: bold; width: 20px; height: 20px;  position: absolute; z-index: 2; top: 80px; background-color: RGBA(0,0,0,.3); color: #fff;}
+.arrow:hover { background-color: RGBA(0,0,0,.7);}
+#container:hover .arrow { display: block;}
+#prev { left: 20px;}
+#next { right: 20px;}
+
+.CMMO-text{
+    float: left;
+    width: 220px;
+}
+.CMMO-text ul{
+    padding-left: 10px;
+    margin-top: -30px;
+}
+.CMMT-header{
+    clear: both;
+}
+
+/* ivdeo */
+.CMMT-video-text{
+    font-size: 14px;
+    color: #000;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    margin: 4px 4px 0 4px;
+}
+
+
+/* content-main-right */
+.content-main-right{
+    float: right;
+    width: 240px;
+    height: 620px;
+    background-color: #f3f3f3;
+}
+.content-main-right-one{
+    width: 220px;
+    margin: 4px auto;
+}
+.CMRO-header{
+    width: 220px;
+    height: 50px;
+    margin-top: 20px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: cadetblue;
+}
+.CMRO-content {
+    margin: 40px 0 40px 0;
+}
+.CMRO-content ul li{
+    margin: 2px 0;
+}
+.CMRO-content ul li a{
+    color: #000;
+    display:block;
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号 */
+    white-space: nowrap;/*强制不换行 */
+    word-break:keep-all;/* */
+}
+.content-main-right-two{
+    width: 220px;
+    margin: 4px auto;
+}

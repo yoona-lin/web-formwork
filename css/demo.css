@@ -1,0 +1,64 @@
+
+.demo-content a:hover{
+    color: #706c6c
+}
+
+/* demo-content-left */
+.demo-content-left{
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(cadetblue, #fff);
+    float: left;
+}
+
+.demo-content-columnLine{
+    width: 10px;
+    height: 400px;
+    background-color: rgb(143, 207, 209);
+    float: left;
+}
+.demo-content-left-container{
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(213, 238, 240);
+    margin: 20px auto;
+    border-radius: 8px 8px 0 0;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.DCLC-box{
+    width: 200px;
+    margin: 4px 0;
+    border: 1px solid rgb(213, 238, 240);
+    border-radius: 0 0 8px 8px;
+    font-size: 14px;
+}
+.DCLC-box ul{
+    margin: 40px 12px;
+    text-align: left;
+}
+
+/* demo-content-right */
+.demo-content-right{
+    width: 720px;
+    float: left;
+}
+.demo-content-right-contiainer{
+    width: 680px;
+    margin: 4px 4px 20px 10px;
+    font-size: 14px;
+}
+.DCRC-header{
+    width: 500px;
+    margin: 20px 0px;
+    color: cadetblue;
+}
+.DCRC-header a{
+    color: cadetblue;
+}
+.DCRC-text{
+    color: #706c6c;
+    line-height: 50px;
+}

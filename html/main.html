@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <title>实验教学中心</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+                <a href="../html/main.html">
+                    <img src="../image/header.jpg" alt="">
+                </a>
+        </div>
+        <div class="rowLine"></div>
+        <div class="content">
+            <div class="content-header">
+                <div class="content-header-nav">
+                    <ul class="nav-one" id="active">
+                        <li><a href="#" class="active">&nbsp;&nbsp; &nbsp;&nbsp;<span class="home-icon"><img src="../image/001-home.png" alt=""></span> 首页  ｜</a></li>
+                        <li> <a href="#"> 中心概况  ｜</a>
+                            <ul class="nav-two">
+                                <li><a href="../html/demo.html">one</a></li>
+                                <li><a href="#">two</a></li>
+                                <li><a href="#">three</a></li>
+                                <li><a href="#">four</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">体制管理  |</a>
+                            <ul class="nav-two">
+                                <li><a href="#">oneeeeeeeee</a></li>
+                                <li><a href="#">two</a></li>
+                                <li><a href="#">three</a></li>
+                                <li><a href="#">four</a></li>
+                                <li><a href="#">fiveeeeeeeeeee</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">实验教学  |</a></li>
+                        <li><a href="#">中心资源  |</a></li>
+                        <li><a href="#">环境与安全  |</a></li>
+                        <li><a href="#">网络平台  |</a></li>
+                        <li><a href="#">虚拟实验教学  |</a></li>
+                        <li><a href="#">资料下载  |</a></li>
+                        <li><a href="#">申报资料</a></li>
+                        <div class="content-header-search">
+                                <form action="" class="content-header-search">信息查询：&nbsp;
+                                    <input type="text" class="search-text">
+                                    <input type="button" value="查询" class="search-button">
+                                </form>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-main">
+                <div class="content-main-left">
+                    <div class="content-main-L-top">
+                        <div class="CMLT-header"><span>&nbsp;<img src="../image/newspaper.png" alt=""></span>&nbsp;公告栏<span><a href="#"> >> 更多</a></span></div>
+                        <div class="CMLT-box">
+                            <ul>
+                                <li><a href="#"><span><img src="../image/file-text.png" alt="" class="icon"></span>one</a></li>
+                                <li><a href="#"><span><img src="../image/file-text.png" alt="" class="icon"></span>two</a></li>
+                                <li><a href="#"><span><img src="../image/file-text.png" alt="" class="icon"></span>three</a></li>
+                                <li><a href="#"><span><img src="../image/file-text.png" alt="" class="icon"></span>four</a></li>
+                                <li><a href="#"><span><img src="../image/file-text.png" alt="" class="icon"></span>five</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-main-L-bottom">
+                        <div class="CMLB-header CMLT-header"><span><img src="../image/network.png" alt=""></span>&nbsp;公告栏<span><a href="#"> >> 更多</a></span></div>
+                        <div class="CMLB-box CMLT-box">
+                            <ul>
+                                <li><a href="#"><span><img src="../image/file-text.png" alt="" class="icon"></span>one</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-main-middle">
+                    <div class="content-main-middle-one">
+                        <div class="CMMO-header"><span><img src="../image/price-tags.png" alt=""></span>&nbsp;&nbsp;新闻动态<a href="#">更多>></a></div>
+                        <div class="columnLine"></div>
+                        <div id="container" class="CMMO-container">
+                                <div id="list" style="left: -250px;">
+                                        <a href="#"><img src="../image/5.jpg" alt="1"/></a>
+                                        <a href="#"><img src="../image/1.jpg" alt="1"/></a>
+                                        <a href="#"><img src="../image/2.jpg" alt="2"/></a>
+                                        <a href="#"><img src="../image/3.jpg" alt="3"/></a>
+                                        <a href="#"><img src="../image/4.jpg" alt="4"/></a>
+                                        <a href="#"><img src="../image/5.jpg" alt="5"/></a>
+                                        <a href="#"><img src="../image/1.jpg" alt="5"/></a>
+                                    </div>
+                                    <div id="buttons">
+                                        <span index="1" class="on"></span>
+                                        <span index="2"></span>
+                                        <span index="3"></span>
+                                        <span index="4"></span>
+                                        <span index="5"></span>
+                                    </div>
+                                    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+                                    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+                        </div>
+                        <script type="text/javascript">
+
+                            window.onload = function () {
+                                var container = document.getElementById('container');
+                                var list = document.getElementById('list');
+                                var buttons = document.getElementById('buttons').getElementsByTagName('span');
+                                var prev = document.getElementById('prev');
+                                var next = document.getElementById('next');
+                                var index = 1;
+                                var len = 5;
+                                var animated = false;
+                                var interval = 3000;
+                                var timer;
+                    
+                    
+                                function animate (offset) {
+                                    if (offset == 0) {
+                                        return;
+                                    }
+                                    animated = true;
+                                    var time = 300;
+                                    var inteval = 10;
+                                    var speed = offset/(time/inteval);
+                                    var left = parseInt(list.style.left) + offset;
+                    
+                                    var go = function (){
+                                        if ((speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
+                                            list.style.left = parseInt(list.style.left) + speed + 'px';
+                                            setTimeout(go, inteval);
+                                        }
+                                        else {
+                                            list.style.left = left + 'px';
+                                            if(left>-50){
+                                                list.style.left = -250 * len + 'px';
+                                            }
+                                            if(left<(-250 * len)) {
+                                                list.style.left = '-250px';
+                                            }
+                                            animated = false;
+                                        }
+                                    }
+                                    go();
+                                }
+                    
+                                function showButton() {
+                                    for (var i = 0; i < buttons.length ; i++) {
+                                        if( buttons[i].className == 'on'){
+                                            buttons[i].className = '';
+                                            break;
+                                        }
+                                    }
+                                    buttons[index - 1].className = 'on';
+                                }
+                    
+                                function play() {
+                                    timer = setTimeout(function () {
+                                        next.onclick();
+                                        play();
+                                    }, interval);
+                                }
+                                function stop() {
+                                    clearTimeout(timer);
+                                }
+                    
+                                next.onclick = function () {
+                                    if (animated) {
+                                        return;
+                                    }
+                                    if (index == 5) {
+                                        index = 1;
+                                    }
+                                    else {
+                                        index += 1;
+                                    }
+                                    animate(-250);
+                                    showButton();
+                                }
+                                prev.onclick = function () {
+                                    if (animated) {
+                                        return;
+                                    }
+                                    if (index == 1) {
+                                        index = 5;
+                                    }
+                                    else {
+                                        index -= 1;
+                                    }
+                                    animate(250);
+                                    showButton();
+                                }
+                    
+                                for (var i = 0; i < buttons.length; i++) {
+                                    buttons[i].onclick = function () {
+                                        if (animated) {
+                                            return;
+                                        }
+                                        if(this.className == 'on') {
+                                            return;
+                                        }
+                                        var myIndex = parseInt(this.getAttribute('index'));
+                                        var offset = -250 * (myIndex - index);
+                    
+                                        animate(offset);
+                                        index = myIndex;
+                                        showButton();
+                                    }
+                                }
+                    
+                                container.onmouseover = stop;
+                                container.onmouseout = play;
+                    
+                                play();
+                    
+                            }
+                        </script>
+                        <div class="CMMO-text CMRO-content">
+                            <ul>
+                                <li><a href="#"><span><img src="../image/price-tag.png" alt="" class="icon">one</span></a></li>
+                                <li><a href="#"><span><img src="../image/price-tag.png" alt="" class="icon">two</span></a></li>
+                                <li><a href="#"><span><img src="../image/price-tag.png" alt="" class="icon">三</span></a></li>
+                                <li><a href="#"><span><img src="../image/price-tag.png" alt="" class="icon">四</span></a></li>
+                                <li><a href="#"><span><img src="../image/price-tag.png" alt="" class="icon">五</span></a></li>
+                                <li><a href="#"><span><img src="../image/price-tag.png" alt="" class="icon"></span>liu六六六六六六六六六六六六六六六六六六六六六六六</a></li>
+                                <li><a href="#"><span><img src="../image/price-tag.png" alt="" class="icon">七</span></a></li>
+                                <li><a href="#"><span><img src="../image/price-tag.png" alt="" class="icon">八</span></a></li>
+                                <li><a href="#"><span><img src="../image/price-tag.png" alt="" class="icon">九</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-main-middle-two">
+                        <div class="CMMO-header CMMT-header"><span><img src="../image/price-tags.png" alt=""></span>&nbsp;&nbsp;环境与安全<a href="#">更多>></a></div>
+                        <div class="columnLine"></div>
+                        <div class="CMMT-video">
+                            <div class="CMMT-video-text">点击视频进行观看</div>
+                            <video  width="300" height="244" src="http://www.w3school.com.cn/i/movie.ogg" controls="controls">您的浏览器不支持 video 标签。</video>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-main-right">
+                    <div class="content-main-right-one">
+                        <div class="CMRO-header">资料下载</div>
+                        <div class="CMRO-content">
+                            <ul>
+                                <li><a href="#"><span><img src="../image/file-empty.png" alt="" class="icon">one</span></a></li>
+                                <li><a href="#"><span><img src="../image/file-empty.png" alt="" class="icon">two</span></a></li>
+                                <li><a href="#"><span><img src="../image/file-empty.png" alt="" class="icon">三</span></a></li>
+                                <li><a href="#"><span><img src="../image/file-empty.png" alt="" class="icon">四</span></a></li>
+                                <li><a href="#"><span><img src="../image/file-empty.png" alt="" class="icon">五</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-main-right-two">
+                        <div class="CMRO-header">虚拟实验教学</div>
+                        <div class="CMRO-content">
+                            <ul>
+                                <li><a href="#"><span><img src="../image/file-empty.png" alt="" class="icon"></span>oneeeeeeeeeeeeeeeeeeeeeeeeeeeee</a></li>
+                                <li><a href="#"><span><img src="../image/file-empty.png" alt="" class="icon">twoooooooooooooooooooooooooooooooo</span></a></li>
+                                <li><a href="#"><span><img src="../image/file-empty.png" alt="" class="icon">三</span></a></li>
+                                <li><a href="#"><span><img src="../image/file-empty.png" alt="" class="icon">四</span></a></li>
+                                <li><a href="#"><span><img src="../image/file-empty.png" alt="" class="icon">五</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rowLine"></div>
+        <div class="fooder">
+            <div class="fooder-text"><span>Copyrights &nbsp</span><span>tubiao</span><span> &nbsp广东工业大学实验中心</span></div>
+            <div class="fooder-text">中心地址：&nbsp广东工业大学龙洞校区 &nbsp 邮编：510520</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+/* header style*/
+
+.header{
+    height: 160px;
+    width: 980px;
+    background-image: url(../image/header-bg.jpg);
+
+}
+
+.header a img{
+    width: 300px;
+    height: 140px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+
+
+/* fooder style*/
+
+.fooder{
+    width: 980px;
+    height: 80px;
+    background-color: cadetblue;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+.fooder-text{
+    padding-top: 6px;
+}
